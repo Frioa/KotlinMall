@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kotlin.mall.messagecenters">
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        tools:replace="android:label"
+        android:supportsRtl="true">
+
+        <receiver
+            android:name="com.kotlin.mall.message.receiver.MessageReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.kotlin.mall" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="JPUSH_APPKEY"
+            android:value="19b0a56c1dd58a4cc8b69ef5"
+            tools:replace="android:value"/>
+        <meta-data android:name="JPUSH_CHANNEL"
+            android:value="developer-default"
+            tools:replace="android:value"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="none">
+
+        <com.kotlin.arithmetic.utils.LineChatView
+            android:id="@+id/line_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingTop="25.5dp"
+
+            android:paddingBottom="25.5dp"
+            app:chatview_animation_duration="250"
+
+            app:chatview_line_big_distance="10dp"
+            app:chatview_line_small_distance="1dp"
+            app:chatview_show_arrow="true"
+
+            app:chatview_show_y_interval="true"
+            app:chatview_text_data_size="14sp"
+            app:chatview_text_xy_size="14sp"
+            app:chatview_x_distance="25dp"
+            app:chatview_y_distance="45dp">
+
+
+        </com.kotlin.arithmetic.utils.LineChatView>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/BtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add" />
+
+    <Button
+        android:id="@+id/BtReduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reduce" />
+
+    <Button
+        android:id="@+id/BtStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+
+
+</LinearLayout>

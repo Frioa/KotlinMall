@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PaySDK</string>
+    <string name="ImmediatelyPay">立即支付</string>
+</resources>
